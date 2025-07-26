@@ -188,7 +188,7 @@ mode "resize" {
 
 bindsym $mod+r mode "resize"
 
-exec --no-startup-id feh --bg-scale ~/Images/background.png
+exec --no-startup-id feh --bg-scale ~/Pictures/background.png
 exec_always --no-startup-id picom --config ~/.config/i3/picom.conf -b
 exec_always --no-startup-id "killall polybar; polybar -r default"
 exec --no-startup-id /usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1 &
