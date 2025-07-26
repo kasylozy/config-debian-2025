@@ -1,4 +1,4 @@
-function docker () {
+function packages() {
   # Add Docker's official GPG key:
   sudo apt update
   sudo apt install ca-certificates curl -y
@@ -12,10 +12,8 @@ function docker () {
     $(. /etc/os-release && echo "$VERSION_CODENAME") stable" | \
     sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
   sudo apt update
-}
 
-function packages() {
-  docker
+  # Install packages
   sudo apt install -y \
     git \
     vim \
