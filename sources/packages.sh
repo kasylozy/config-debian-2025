@@ -67,4 +67,6 @@ function packages() {
     policykit-1-gnome \
     pulsemixer \
     -y
+
+    dconf write /org/gnome/calculator/refresh-interval 0
 }
